@@ -1,0 +1,35 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns  : 4;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : .500em;
+
+$tablet: 8;
+$desktop: 13;
+
+$show-grid-backgrounds  : true;
+
+$headline-font: 'ff-good-headline-web-pro-con', Arial, sans-serif;
+$paragraph-font: 'freight-display-pro', Georgia, serif;
+
+$mobile-h1-size: 3.500em;
+$tablet-h1-size: 6em;
+$desktop-h1-size: 10em;
+
+$mobile-p-size: 1.250em;
+$tablet-p-size: 1.500em;
+$desktop-p-size: 1.750em;
+
+
+$krate-color: #E20079;
+
+body {
+	background-color: #efeeef;
+}
