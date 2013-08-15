@@ -20,18 +20,12 @@
   }
 
   h2 { font-weight: 400; }
-
   p { font-family: $paragraph-font; line-height: 1.5; }
-
-  overflow: scroll;
-
-  // mobile stylings first
 
 	.message {
 		color: #000;
 		text-align: center;
 		margin-bottom: 125px;
-
 		h1 {
 			margin: 50px auto 20px;
 			line-height: .850em;
@@ -39,15 +33,12 @@
 			letter-spacing: 5px;
 			text-shadow: 0 2px 0 #a40259;
 		}
-
 		p { font-size: 1.250em; }
 	}
-
 	.individual-thanks {
 		.thankyou {
 			margin: 100px auto; 
 			padding: 0 .500em;
-
 			img {
 				display: block;
 				position: relative;
@@ -57,10 +48,7 @@
 				-webkit-border-radius: 50%;
 				-moz-border-radius: 50%;
 				border-radius: 50%; 
-
-				
 			}
-
 			h2 { 
 				color: #E20079;
 				text-align: center; 
@@ -69,38 +57,26 @@
 			p { font-size: 1.125em; text-align: left; color: #000; }
 		}
 	}
-
-	
-
 	@include at-breakpoint($tablet)  {
-		// @include susy-grid-background;
-
-	// tablet stylings go in here
-
 		.message {
 			h1 { font-size: 7em; }
-			p { padding: 0 150px; }
+			p { padding: 0 .450em; }
 		}
-			
-
 		.individual-thanks {
 			.thankyou {
 				@include span-columns(4, 8);
 				margin: auto;
-				padding: 2em;
-
+				padding: 1.500em;
 				img {
 					-webkit-transition: all .3s ease;
 					-moz-transition: all .3s ease;  
 					-o-transition: all .3s ease;
 					transition: all .3s ease;
-
 					&:hover {
 						bottom: 10px;
 						& + h2 { color: #E20079; }
 					}
 				}
-
 				h2 {
 					color: #000;
 					-webkit-transition: all .3s ease;
@@ -111,20 +87,11 @@
 			}
 		}
 	}
-
-
-
 	@include at-breakpoint($desktop)  {
-
-		// desktop stylings go in here
-
 		.message {
 			h1 { font-size: 10em; margin-top: 125px;}
 			p { max-width:800px; margin: auto; padding: 0 .250em;}
 		}
-
-		
-
 		.individual-thanks {
 			.thankyou {
 				@include span-columns(4, 12, 1.500em);
@@ -132,20 +99,13 @@
 			}
 		}
 	}
-
-
-} // end conatiner
-
-
+} 
 footer {
 	width: 100%;
 	margin-top: 100px;
 	height: 50px;
 	display: table;
 	font-family: $paragraph-font;
-
-
-
 	.footer {
 		display: table-cell;
 		vertical-align: middle;
