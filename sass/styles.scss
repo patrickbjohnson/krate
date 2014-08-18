@@ -9,6 +9,7 @@
 
 .container {
   @include container($total-columns, $tablet, $desktop);
+  @include susy-grid-background;
   @include border-box-sizing;
   font-size: 1rem;
 
